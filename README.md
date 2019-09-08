@@ -6,9 +6,7 @@ Good practice in building docker images should include testing that the result h
 
 The dockerspec_docker image resulting from this repository provides Dockerspec. It lets you avoid installing Dockerspec on your build host directly.
 
-##Build
-
-Straight forward...
+## Build
 
 Depending on the docker version of your underlying host, it might be a good idea to choose the correct version of docker binaries from 
 
@@ -16,12 +14,13 @@ Depending on the docker version of your underlying host, it might be a good idea
 
 in order to avoid unexpected effects from version incompatability. Change the version accordingly in the Dockerfile.
 
+Otherwise the build is straight forward.
 
 ```
 docker build -t dockerspec_docker:latest .
 ```
 
-##Test
+## Test
 
 For running tests, the docker socket of your build host needs to be mapped into the dockerspec_docker container.
 
