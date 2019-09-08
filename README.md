@@ -8,13 +8,7 @@ The dockerspec_docker image resulting from this repository provides Dockerspec. 
 
 ## Build
 
-Depending on the docker version of your underlying host, it might be a good idea to choose the correct version of docker binaries from 
-
-    https://download.docker.com/linux/static/stable/x86_64/
-
-in order to avoid unexpected effects from version incompatability. Change the version accordingly in the Dockerfile.
-
-Otherwise the build is straight forward.
+Straight forward.
 
 ```
 docker build -t dockerspec_docker:latest .

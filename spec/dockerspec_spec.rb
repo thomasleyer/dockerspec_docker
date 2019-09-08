@@ -13,8 +13,5 @@ describe 'dockerspec image' do
     describe package('dockerspec') do
       it { should be_installed.by('gem') }
     end
-    describe file('/usr/local/bin/docker') do
-      it { should exist }
-    end
   end
 end
